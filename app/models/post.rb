@@ -4,4 +4,5 @@ class Post < ApplicationRecord
   validates :body, presence: true, unless: :link
 
   belongs_to :user
+  has_many :comments
 end
